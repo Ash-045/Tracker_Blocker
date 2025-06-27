@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tracker Blocker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      width: 300px;
+      padding: 10px;
+    }
+    h2, h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .section {
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      max-height: 100px;
+      overflow-y: auto;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 3px;
+      border-bottom: 1px solid #eee;
+    }
+    button {
+      font-size: 10px;
+      padding: 2px 5px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+    input {
+      width: 180px;
+      padding: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Trackers Blocked: <span id="block-count">0</span></h2>
+
+  <div class="section">
+    <h3>Blocked Trackers (All Time)</h3>
+    <ul id="tracker-list"><li>Loading...</li></ul>
+  </div>
+
+  <div class="section">
+    <h3>Whitelist</h3>
+    <input type="text" id="whitelist-input" placeholder="domain.com">
+    <button id="add-whitelist">Add</button>
+    <ul id="whitelist-list"><li>Loading...</li></ul>
+  </div>
+
+  <div class="section">
+    <h3>Blacklist</h3>
+    <input type="text" id="blacklist-input" placeholder="domain.com">
+    <button id="add-blacklist">Add</button>
+    <ul id="blacklist-list"><li>Loading...</li></ul>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

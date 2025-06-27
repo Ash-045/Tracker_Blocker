@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "TrackerBlocker",
+  "version": "1.0",
+  "description": "Privacy-focused tracker blocker with learning and user control.",
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "declarative_net_request": {
+    "rule_resources": []
+  }
+}
