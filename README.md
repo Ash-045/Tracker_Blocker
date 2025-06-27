@@ -1,4 +1,4 @@
-🛡️ TrackerBlocker – Chrome Privacy Extension
+TrackerBlocker – Chrome Privacy Extension
 
 **TrackerBlocker** is a lightweight, privacy-focused Chrome extension that automatically blocks known tracking scripts and helps you manage privacy with smart, user-controlled rules.
 
